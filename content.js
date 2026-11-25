@@ -30,7 +30,6 @@ window.CONTENT = {
       projectVisit: "Visitar o site",
       projectBuilt: "O que construímos",
       projectMyRole: "Minha parte",
-      moreProjectsTitle: "Outros projetos",
       videoNote: "O vídeo mostra a primeira versão do Atlas e serve só como introdução. A interface e os recursos mudaram bastante desde então.",
       projectShotAlt: "Página inicial do site da Oficina das Meninas, com o logo da ONG e o lema Amor, respeito e acolhimento",
       experienceTitle: "Experiência",
@@ -76,35 +75,6 @@ window.CONTENT = {
       ],
       tags: ["Spring Boot", "Angular", "PostgreSQL", "Docker", "CI/CD", "DDD", "PagBank"],
     },
-    projects: [
-      {
-        name: "Project Atlas",
-        kind: "App desktop · projeto pessoal",
-        description: "Aplicativo para orquestrar agentes de IA em projetos de desenvolvimento. Cada workspace é uma pasta local onde agentes, com personalidade, runtime e modelo próprios, trabalham de forma independente. Inclui fluxo de especificações (Spec-Driven Development), workflows e acompanhamento pelo celular.",
-        image: "assets/projects/atlas-specs.jpg",
-        width: 800, height: 500,
-        alt: "Tela de especificações do Project Atlas, com as etapas proposta, requisitos, design, tarefas e revisão final aprovadas",
-        tags: ["Tauri 2", "Rust", "React", "TypeScript", "Claude", "Codex", "Gemini", "MCP"],
-        links: [
-          { label: "GitHub", url: "https://github.com/LucasAlt40/project-atlas" },
-          { label: "Baixar (Releases)", url: "https://github.com/LucasAlt40/project-atlas/releases" },
-          { label: "Vídeo de introdução", url: "https://drive.google.com/drive/folders/1Df3JqUlaGJBG0vcHeuTQg7YneI_gv-bg?usp=sharing", note: true },
-        ],
-      },
-      {
-        name: "CamBar",
-        kind: "App de barra de menu (macOS) e bandeja (Windows)",
-        description: "Mostra ao vivo as câmeras IP (RTSP) da rede local, para câmeras genéricas que não têm cliente para desktop. Tem janela expandida com controle PTZ via ONVIF, visão geral em grade, busca de câmeras na rede e senhas guardadas no Keychain. Depois, portei o app para Windows.",
-        image: "assets/projects/cambar-visao-geral.jpg",
-        width: 1400, height: 989,
-        alt: "Visão geral do CamBar com duas câmeras ao vivo, contador de câmeras online e telemetria de resolução e codec",
-        tags: ["Swift", "SwiftUI", "C#", "WPF", "RTSP", "ffmpeg", "ONVIF"],
-        links: [
-          { label: "GitHub (macOS)", url: "https://github.com/LucasAlt40/CamBar" },
-          { label: "GitHub (Windows)", url: "https://github.com/LucasAlt40/CamBar-Windows" },
-        ],
-      },
-    ],
     sideProjects: [
       {
         name: "Project Atlas",
@@ -118,6 +88,7 @@ window.CONTENT = {
         links: [
           { label: "GitHub", url: "https://github.com/LucasAlt40/project-atlas" },
           { label: "Baixar", url: "https://github.com/LucasAlt40/project-atlas/releases" },
+          { label: "Vídeo de introdução", url: "https://drive.google.com/drive/folders/1Df3JqUlaGJBG0vcHeuTQg7YneI_gv-bg?usp=sharing", note: true },
         ],
       },
       {
@@ -248,7 +219,6 @@ window.CONTENT = {
       projectVisit: "Visit the site",
       projectBuilt: "What we built",
       projectMyRole: "My part",
-      moreProjectsTitle: "Other projects",
       videoNote: "The video shows the first version of Atlas and is just an introduction. The interface and features have changed a lot since then.",
       projectShotAlt: "Home page of the Oficina das Meninas website, showing the nonprofit's logo and its motto: love, respect, and care",
       experienceTitle: "Experience",
@@ -294,35 +264,6 @@ window.CONTENT = {
       ],
       tags: ["Spring Boot", "Angular", "PostgreSQL", "Docker", "CI/CD", "DDD", "PagBank"],
     },
-    projects: [
-      {
-        name: "Project Atlas",
-        kind: "Desktop app · personal project",
-        description: "An app for orchestrating AI agents on software projects. Each workspace is a local folder where agents, each with its own personality, runtime, and model, work independently. It includes a specification flow (Spec-Driven Development), workflows, and progress tracking from your phone.",
-        image: "assets/projects/atlas-specs.jpg",
-        width: 800, height: 500,
-        alt: "Project Atlas specifications screen, with the proposal, requirements, design, tasks, and final review steps approved",
-        tags: ["Tauri 2", "Rust", "React", "TypeScript", "Claude", "Codex", "Gemini", "MCP"],
-        links: [
-          { label: "GitHub", url: "https://github.com/LucasAlt40/project-atlas" },
-          { label: "Download (Releases)", url: "https://github.com/LucasAlt40/project-atlas/releases" },
-          { label: "Intro video", url: "https://drive.google.com/drive/folders/1Df3JqUlaGJBG0vcHeuTQg7YneI_gv-bg?usp=sharing", note: true },
-        ],
-      },
-      {
-        name: "CamBar",
-        kind: "Menu bar app (macOS) and tray app (Windows)",
-        description: "Shows live IP cameras (RTSP) from your local network, for generic cameras that have no desktop client. It has an expanded window with PTZ control over ONVIF, a grid overview, network camera discovery, and passwords stored in the Keychain. I later ported it to Windows.",
-        image: "assets/projects/cambar-visao-geral.jpg",
-        width: 1400, height: 989,
-        alt: "CamBar overview with two live cameras, an online camera counter, and resolution and codec telemetry",
-        tags: ["Swift", "SwiftUI", "C#", "WPF", "RTSP", "ffmpeg", "ONVIF"],
-        links: [
-          { label: "GitHub (macOS)", url: "https://github.com/LucasAlt40/CamBar" },
-          { label: "GitHub (Windows)", url: "https://github.com/LucasAlt40/CamBar-Windows" },
-        ],
-      },
-    ],
     sideProjects: [
       {
         name: "Project Atlas",
@@ -336,6 +277,7 @@ window.CONTENT = {
         links: [
           { label: "GitHub", url: "https://github.com/LucasAlt40/project-atlas" },
           { label: "Download", url: "https://github.com/LucasAlt40/project-atlas/releases" },
+          { label: "Intro video", url: "https://drive.google.com/drive/folders/1Df3JqUlaGJBG0vcHeuTQg7YneI_gv-bg?usp=sharing", note: true },
         ],
       },
       {

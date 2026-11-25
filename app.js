@@ -73,30 +73,6 @@
     fill("project-highlights", p.highlights.map(function (h) { return el("li", { text: h }); }));
 
     // Outros projetos
-    fill("projects", d.projects.map(function (pr) {
-      var img = el("img", { src: pr.image, width: pr.width, height: pr.height, alt: pr.alt, loading: "lazy", decoding: "async" });
-      var hasNote = pr.links.some(function (l) { return l.note; });
-      return el("article", { class: "proj" }, [
-        el("a", { class: "proj__shot", href: pr.links[0].url, target: "_blank", rel: "noopener", "aria-label": pr.name }, [
-          el("div", { class: "proj__window" }, [
-            el("div", { class: "proj__bar", "aria-hidden": "true" }, [el("span"), el("span"), el("span")]),
-            img,
-          ]),
-        ]),
-        el("div", { class: "proj__body" }, [
-          el("p", { class: "proj__kind", text: pr.kind }),
-          el("h4", { class: "proj__name", text: pr.name }),
-          el("p", { class: "proj__desc", text: pr.description }),
-          el("ul", { class: "tags" }, tagList(pr.tags)),
-          el("div", { class: "proj__links" }, pr.links.map(function (l) {
-            return el("a", { class: "btn btn--ghost btn--sm", href: l.url, target: "_blank", rel: "noopener", text: l.label + (l.note ? " *" : "") + " ↗" });
-          })),
-          hasNote ? el("p", { class: "proj__note", text: "* " + ui.videoNote }) : null,
-        ]),
-      ]);
-    }));
-
-    // Outros projetos
     fill("side-projects", d.sideProjects.map(function (sp) {
       var img = el("img", { src: sp.image, alt: sp.alt, loading: "lazy", decoding: "async" });
       return el("article", { class: "side" }, [
@@ -113,8 +89,9 @@
           el("p", { class: "side__status", text: sp.status }),
           el("ul", { class: "tags" }, tagList(sp.tags)),
           el("div", { class: "side__links" }, sp.links.map(function (l) {
-            return el("a", { class: "side__link", href: l.url, target: "_blank", rel: "noopener", text: l.label + " ↗" });
+            return el("a", { class: "side__link", href: l.url, target: "_blank", rel: "noopener", text: l.label + (l.note ? " *" : "") + " ↗" });
           })),
+          sp.links.some(function (l) { return l.note; }) ? el("p", { class: "side__note", text: "* " + ui.videoNote }) : null,
         ]),
       ]);
     }));
