@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- Modelo da imagem de prévia do link (1200x630).
+     Para gerar de novo:
+     "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless --hide-scrollbars \
+       --window-size=1200,630 --screenshot=og.png scripts/og.html && sips -s format jpeg -s formatOptions 85 og.png --out assets/og-image.jpg && rm og.png -->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    font-family: ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+    color: #fff; padding: 72px 80px;
+    background:
+      radial-gradient(600px 600px at 100% 0%, rgba(255,255,255,.14), transparent 70%),
+      linear-gradient(135deg, #371e77, #6a3fd6);
+    display: flex; flex-direction: column; justify-content: space-between;
+  }
+  .top { display: flex; align-items: center; gap: 18px; }
+  .mark { width: 64px; height: 64px; border-radius: 18px; background: rgba(255,255,255,.16);
+    border: 1px solid rgba(255,255,255,.3); display: grid; place-items: center; font-weight: 700; font-size: 26px; }
+  .url { font-family: ui-monospace, Menlo, monospace; font-size: 24px; color: rgba(255,255,255,.78); }
+  h1 { font-size: 92px; line-height: 1; letter-spacing: -0.03em; }
+  .role { margin-top: 20px; font-size: 36px; font-weight: 600; color: rgba(255,255,255,.92); }
+  .tags { display: flex; flex-wrap: wrap; gap: 12px; }
+  .tags span { font-size: 24px; font-weight: 600; padding: 10px 20px; border-radius: 999px;
+    background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.22); }
+</style>
+</head>
+<body>
+  <div class="top"><div class="mark">LT</div><div class="url">lucasalt40.github.io</div></div>
+  <div>
+    <h1>Lucas Theodoro</h1>
+    <p class="role">Engenheiro de Software Full Stack</p>
+  </div>
+  <div class="tags">
+    <span>Java · Spring Boot</span><span>Kafka</span><span>Angular</span><span>.NET</span><span>Microsserviços</span>
+  </div>
+</body>
+</html>
