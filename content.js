@@ -9,7 +9,9 @@ window.CONTENT = {
     },
     ui: {
       navAbout: "Sobre",
-      navProject: "Projeto",
+      navProject: "Projetos",
+      sideTitle: "Outros projetos",
+      sideIntro: "Projetos pessoais que criei para resolver problemas do meu dia a dia, do desktop à rede de casa.",
       navExperience: "Experiência",
       navSkills: "Habilidades",
       navContact: "Contato",
@@ -97,6 +99,36 @@ window.CONTENT = {
         width: 1400, height: 989,
         alt: "Visão geral do CamBar com duas câmeras ao vivo, contador de câmeras online e telemetria de resolução e codec",
         tags: ["Swift", "SwiftUI", "C#", "WPF", "RTSP", "ffmpeg", "ONVIF"],
+        links: [
+          { label: "GitHub (macOS)", url: "https://github.com/LucasAlt40/CamBar" },
+          { label: "GitHub (Windows)", url: "https://github.com/LucasAlt40/CamBar-Windows" },
+        ],
+      },
+    ],
+    sideProjects: [
+      {
+        name: "Project Atlas",
+        tagline: "App desktop para orquestrar agentes de IA",
+        image: "assets/projects/atlas-specs.jpg",
+        alt: "Tela de specs do Project Atlas, com as etapas proposta, requisitos, design, tarefas e revisão final aprovadas",
+        description:
+          "Cada workspace é um projeto local onde agentes de IA, com personalidade, runtime e modelo próprios, trabalham de forma independente. Tem um fluxo de Spec-Driven Development (proposta, requisitos, design, tarefas e revisão por um agente), MCP Hub e integração com Claude Code, Codex, Gemini e Copilot.",
+        status: "Em desenvolvimento · instaladores para macOS, Windows e Linux",
+        tags: ["Tauri 2", "Rust", "React", "TypeScript", "Agentes de IA", "MCP"],
+        links: [
+          { label: "GitHub", url: "https://github.com/LucasAlt40/project-atlas" },
+          { label: "Baixar", url: "https://github.com/LucasAlt40/project-atlas/releases" },
+        ],
+      },
+      {
+        name: "CamBar",
+        tagline: "Câmeras IP ao vivo na barra de menu do Mac",
+        image: "assets/projects/cambar-visao-geral.jpg",
+        alt: "Visão geral do CamBar com duas câmeras ao vivo, com resolução, codec e FPS de cada uma",
+        description:
+          "App nativo para macOS que mostra ao vivo as câmeras IP (RTSP) da rede local, feito para câmeras genéricas sem cliente para desktop. Tem visão geral em grade, janela expandida com telemetria, controle PTZ via ONVIF, busca de câmeras na rede e senhas no Keychain. Também ganhou um port nativo para Windows, em C# e WPF.",
+        status: "macOS e Windows · código aberto",
+        tags: ["Swift", "macOS", "RTSP", "ffmpeg", "ONVIF", "C# / WPF"],
         links: [
           { label: "GitHub (macOS)", url: "https://github.com/LucasAlt40/CamBar" },
           { label: "GitHub (Windows)", url: "https://github.com/LucasAlt40/CamBar-Windows" },
@@ -195,7 +227,9 @@ window.CONTENT = {
     },
     ui: {
       navAbout: "About",
-      navProject: "Project",
+      navProject: "Projects",
+      sideTitle: "Side projects",
+      sideIntro: "Personal projects I built to solve everyday problems, from the desktop to my home network.",
       navExperience: "Experience",
       navSkills: "Skills",
       navContact: "Contact",
@@ -283,6 +317,36 @@ window.CONTENT = {
         width: 1400, height: 989,
         alt: "CamBar overview with two live cameras, an online camera counter, and resolution and codec telemetry",
         tags: ["Swift", "SwiftUI", "C#", "WPF", "RTSP", "ffmpeg", "ONVIF"],
+        links: [
+          { label: "GitHub (macOS)", url: "https://github.com/LucasAlt40/CamBar" },
+          { label: "GitHub (Windows)", url: "https://github.com/LucasAlt40/CamBar-Windows" },
+        ],
+      },
+    ],
+    sideProjects: [
+      {
+        name: "Project Atlas",
+        tagline: "A desktop app for orchestrating AI agents",
+        image: "assets/projects/atlas-specs.jpg",
+        alt: "Project Atlas specs screen, with the proposal, requirements, design, tasks, and final review steps approved",
+        description:
+          "Each workspace is a local project where AI agents, each with its own personality, runtime, and model, work independently. It has a Spec-Driven Development flow (proposal, requirements, design, tasks, and review by an agent), an MCP Hub, and integration with Claude Code, Codex, Gemini, and Copilot.",
+        status: "In development · installers for macOS, Windows, and Linux",
+        tags: ["Tauri 2", "Rust", "React", "TypeScript", "AI agents", "MCP"],
+        links: [
+          { label: "GitHub", url: "https://github.com/LucasAlt40/project-atlas" },
+          { label: "Download", url: "https://github.com/LucasAlt40/project-atlas/releases" },
+        ],
+      },
+      {
+        name: "CamBar",
+        tagline: "Live IP cameras in the Mac menu bar",
+        image: "assets/projects/cambar-visao-geral.jpg",
+        alt: "CamBar overview with two live cameras, showing each one's resolution, codec, and FPS",
+        description:
+          "A native macOS app that shows live IP cameras (RTSP) on the local network, built for generic cameras with no desktop client. It has a grid overview, an expanded window with telemetry, PTZ control over ONVIF, network camera discovery, and passwords stored in the Keychain. It also has a native Windows port, in C# and WPF.",
+        status: "macOS and Windows · open source",
+        tags: ["Swift", "macOS", "RTSP", "ffmpeg", "ONVIF", "C# / WPF"],
         links: [
           { label: "GitHub (macOS)", url: "https://github.com/LucasAlt40/CamBar" },
           { label: "GitHub (Windows)", url: "https://github.com/LucasAlt40/CamBar-Windows" },

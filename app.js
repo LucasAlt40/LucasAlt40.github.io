@@ -96,6 +96,29 @@
       ]);
     }));
 
+    // Outros projetos
+    fill("side-projects", d.sideProjects.map(function (sp) {
+      var img = el("img", { src: sp.image, alt: sp.alt, loading: "lazy", decoding: "async" });
+      return el("article", { class: "side" }, [
+        el("a", { class: "side__shot", href: sp.links[0].url, target: "_blank", rel: "noopener", "aria-label": sp.name }, [
+          el("div", { class: "side__window" }, [
+            el("div", { class: "side__bar", "aria-hidden": "true" }, [el("span"), el("span"), el("span")]),
+            img,
+          ]),
+        ]),
+        el("div", { class: "side__body" }, [
+          el("h3", { class: "side__name", text: sp.name }),
+          el("p", { class: "side__tagline", text: sp.tagline }),
+          el("p", { class: "side__desc", text: sp.description }),
+          el("p", { class: "side__status", text: sp.status }),
+          el("ul", { class: "tags" }, tagList(sp.tags)),
+          el("div", { class: "side__links" }, sp.links.map(function (l) {
+            return el("a", { class: "side__link", href: l.url, target: "_blank", rel: "noopener", text: l.label + " ↗" });
+          })),
+        ]),
+      ]);
+    }));
+
     // Experiência
     fill("timeline", d.experience.map(function (job) {
       var current = !job.end;
